@@ -1,0 +1,232 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Art Gallery</title>
+<!-- fosr-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Super Market Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="{{url_for('static',filename='css/font-awesome.css')}}" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<script>
+	
+
+	function onChange() {
+		const password = document.querySelector('input[name=password]');
+		const cpass = document.querySelector('input[name=cpass]');
+		if (cpass.value === password.value) {
+			cpass.setCustomValidity('');
+		} else {
+			cpass.setCustomValidity('Passwords do not match');
+		}
+	}
+</script>
+<script type="text/javascript">
+	function AadharValidate() {
+		var aadhar = document.getElementById("txtAadhar").value;
+		var adharcardTwelveDigit = /^\d{12}$/;
+		var adharSixteenDigit = /^\d{16}$/;
+		if (aadhar != '') {
+			if (aadhar.match(adharcardTwelveDigit)) {
+				return true;
+			}
+			else if (aadhar.match(adharSixteenDigit)) {
+				return true;
+			}
+			else {
+				alert("Enter valid Aadhar Number");
+				return false;
+			}
+		}
+	}
+  </script>
+</head>
+	
+<body>
+<!-- header -->
+	
+
+	<div class="logo_products">
+		<div class="container">
+		<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+				
+					
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left">
+				<h1><a href="/">Art Gallery</a></h1>
+			</div>
+	
+			
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- navigation -->
+<div class="navigation-agileits">
+	<div class="container">
+		<nav class="navbar navbar-default">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="/" class="act">Home</a></li>
+									
+							
+							</ul>
+						</div>
+							
+					
+						</nav>
+		</div>
+	</div>
+		
+<!-- //navigation -->
+
+<!-- register -->
+	<div class="register">
+		<div class="container">
+			<h2>Register Here</h2>
+			<div class="login-form-grids">
+				<h5>Artist information</h5>
+				<form action="artist_registration" method="POST">
+					<input type="text" name="name" placeholder=" Name..." required=" " pattern="[A-Za-z]+" >
+					<input type="text" name="adrs" placeholder="Address" required=" " pattern="[A-Za-z]+" >
+					<input type="text" name="district" placeholder="District" required=" " pattern="[A-Za-z]+" >&nbsp;
+					<input type="text" name="city" placeholder="City" required=" " pattern="[A-Za-z]+" >&nbsp;
+					<input type="text" name="pin" placeholder="Postel Code" required=" " pattern="[1-9]{1}[0-9]{5}|[1-9]{1}[0-9]{3}\\s[0-9]{3}" title="Must enter pincode" >&nbsp;
+					<input type="text" name="phone" placeholder="contact number" required=" " pattern="[6789][0-9]{9}" >&nbsp;
+					<input type="email" name="email" placeholder="Email" required=" "pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >&nbsp;
+		
+					<input type="text" name="asso_regno" placeholder="Assosiation Register Number (If Available Only)">&nbsp;
+					<input type="text" name="adhaarno" placeholder="Adhaar Number" id="txtAadhar" required onblur="AadharValidate()"  >
+					&nbsp;<br>
+					<label for="reg_payment">Registration Payment Details</label><br>&nbsp;
+
+					<div class="row">
+					  <div class="col-sm-6">
+						 
+						<input defaulvalue="500" class="form-control"   placeholder="₹1000" required readonly/>
+					  </div>
+					 
+					  <div class="col-sm-6">
+						
+						<input type="text" name="card_holder" class="form-control" id="reg_payment" size="3" aria-describedby="emailHelp" placeholder="CARD HOLDER NAME " required/>
+					  </div>
+					</div>&nbsp;
+					
+						 
+						<input type="text"  class="form-control"  aria-describedby="emailHelp" placeholder="CARD NUMBER " pattern="[0-9]{16}"  maxlength="16" required/>&nbsp;
+					 &nbsp;
+					<div class="row">
+						<div class="col-sm-6">
+						 
+						  <input type="number" name="csv" class="form-control" id="csv" aria-describedby="emailHelp" placeholder="CSV " required/>
+						</div>
+						  <div class="col-sm-6">
+						 
+							<input type="month" name="exp" class="form-control" id="exp" size="3" aria-describedby="emailHelp" placeholder="EXP DATE " required/>
+					
+						  </div>
+				
+				   
+					</div>&nbsp;
+				<!-- <div class="register-check-box">
+					<div class="check">
+						<label class="checkbox"><input type="checkbox" name="checkbox"><i> </i>Subscribe to Newsletter</label>
+					</div>
+				</div> -->
+					<input type="password" name="password" placeholder="Password" required=" " onChange="onChange()" class="form-control"
+				
+					title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+					<input type="password" name="cpass" placeholder="Password Confirmation" required=" " onChange="onChange()" value="">
+					
+					<input type="submit" value="Register">
+				</form>
+			
+			</div>
+			
+		</div>
+	</div>
+<!-- //register -->
+<!-- //footer -->
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- top-header and slider -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<script src="js/minicart.min.js"></script>
+<script>
+	// Mini Cart
+	paypal.minicart.render({
+		action: '#'
+	});
+
+	if (~window.location.search.indexOf('reset=true')) {
+		paypal.minicart.reset();
+	}
+</script>
+<!-- main slider-banner -->
+<script src="{{url_for('static',filename='js/skdslider.min.js')}}"></script>
+<link href="{{url_for('static',filename='css/skdslider.css')}}" rel="stylesheet">
+<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#demo1').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
+						
+			jQuery('#responsive').change(function(){
+			  $('#responsive_wrapper').width(jQuery(this).val());
+			});
+			
+		});
+</script>	
+<!-- //main slider-banner --> 
+
+
+</body>
+</html>

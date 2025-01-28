@@ -1,0 +1,272 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Art Gallery</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Super Market Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="{{url_for('static',filename='css/font-awesome.css')}}" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="{{url_for('static',filename='js/jquery-1.11.1.min.js')}}"></script>
+
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{{url_for('static',filename='js/move-top.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static',filename='js/easing.js')}}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body>
+
+
+	<div class="logo_products">
+		<div class="container">
+		<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<!-- <li><i class="fa fa-phone" aria-hidden="true"></i>Auction online </li> -->
+					
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left">
+				<h1><a href=""> Art Gallery</a></h1>
+			</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="search" name="Search" placeholder="Search for a Art..." required="">
+				<button type="submit" class="btn btn-default search" aria-label="Left Align">
+					<i class="fa fa-search" aria-hidden="true"> </i>
+				</button>
+				<div class="clearfix"></div>
+			</form>
+		</div>
+			
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- navigation -->
+	<div class="navigation-agileits">
+		<div class="container">
+			<nav class="navbar navbar-default">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header nav_2">
+								<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div> 
+							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="/customer_home" class="act">Home</a></li>	
+									<!-- Mega Menu -->
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">View <b class="caret"></b></a>
+										<ul class="dropdown-menu multi-column columns-3">
+											<div class="row">
+												<div class="multi-gd-img">
+													<ul class="multi-column-dropdown">
+														<h6>View </h6>
+														<li><a href="/customer_view_order_item">View Order</a></li>
+														<li><a href="/customer_view_notification">View Notification</a></li>
+														<li><a href="/customer_view_complaint_reply">View Complaint Reply</a></li>
+														</ul>
+												</div>	
+												
+											</div>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Add <b class="caret"></b></a>
+										<ul class="dropdown-menu multi-column columns-3">
+											<div class="row">
+												<div class="multi-gd-img">
+													<ul class="multi-column-dropdown">
+														<h6>Add </h6>
+														<li><a href="/customer_add_complaints">Add complaint</a></li>
+														<li><a href="/feedback">Add FeedBack</a></li>
+														
+													</ul>
+												</div>
+												
+												
+											</div>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+										<ul class="dropdown-menu multi-column columns-3">
+											<div class="row">
+												<div class="multi-gd-img">
+													<ul class="multi-column-dropdown">
+														<h6>Product-Details</h6>
+														<!-- <li><a href="/Add_Product">Add Product</a></li> -->
+														<li><a href="/customer_view_normal_product">View Normal Product</a></li>
+														<li><a href="/customer_view_bidding_product">View Biding Product</a></li>
+														
+													</ul>
+												</div>
+												
+											</div>
+										</ul>
+									</li>
+									<li class="active"><a href="logout" class="act">LogOut</a></li>	
+									<li class="active"><a href="customer_view_cart" class="act">Cart</a></li>	
+								
+								</ul>
+							</div>
+							</nav>
+			</div>
+		</div>
+		
+<!-- //navigation -->
+<!-- breadcrumbs -->
+	<br><br>
+
+   <center> <h3>My Orders</h3></center>
+   <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+         <div class="table-responsive">
+                <table class="table table-bordered">
+<!--                   
+                    <table class="table table-stripped"> -->
+                        <tr>
+                            <th> Product Name</th>
+                            <!-- <th>Last Name</th> -->
+
+                            <th>Images</th>                             
+                            <!-- <th>Price</th> -->
+                            <th>Total Price</th>
+                            <th>Status</th>                                
+                            <!-- <th>Pin</th>
+                            <th>Address</th>
+                            <th>Total Amount</th>
+                            <th>Pay Status</th> -->
+                            <!-- <th> </th> 
+                            <th> </th> -->
+                          </tr>
+                      <tbody>
+                          {% for row in row%}
+                          <tr>
+                            <!-- <td>{{row[1]}}</td> -->
+                            <td>{{row[0]}}</td>
+                            <td>
+                                <!-- {{row[2]}} -->
+                                <img width="50" height="50" src="/static/upload/{{row[1]}}">
+                              </td>
+                            <!-- <td>{{row[2]}}</td> -->
+                            <td>{{row[3]}}</td>
+                            <td>{{row[4]}}</td>
+                           
+                            <!-- <td>{{row[6]}}</td>
+                           
+                            <td>{{row[7]}}</td>
+                            <td>{{row[11]}}</td>
+                            <td>{{row[17]}}</td>
+                            <td>{{row[18]}}</td> -->
+                            <!-- <td>
+                                    <form action="/dispatched" method="POST">
+                                        <button class="btn btn-primary btn-sm">Dispatch</button>
+
+                                </td>
+
+                                <td>
+                                    <form action="/delivered" method="POST">
+                                        <button class="btn btn-primary btn-sm">Delivered</button>
+
+                                </td> -->
+                            </tr>
+                            {%endfor%}
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+      <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+<!-- top-header and slider -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<script src="{{url_for('static',filename='js/minicart.min.js')}}"></script>
+<script>
+	// Mini Cart
+	paypal.minicart.render({
+		action: '#'
+	});
+
+	if (~window.location.search.indexOf('reset=true')) {
+		paypal.minicart.reset();
+	}
+</script>
+<!-- main slider-banner -->
+<script src="{{url_for('static',filename='js/skdslider.min.js')}}"></script>
+<link href="{{url_for('static',filename='css/skdslider.css')}}" rel="stylesheet">
+<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#demo1').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
+						
+			jQuery('#responsive').change(function(){
+			  $('#responsive_wrapper').width(jQuery(this).val());
+			});
+			
+		});
+</script>	
+<!-- //main slider-banner --> 
+<style>
+    body{margin-top:20px;}
+
+.toggleDisplay {
+  display: none;
+}
+.toggleDisplay.in {
+  display: table-cell;
+}
+</style>
+</body>
+</html>
